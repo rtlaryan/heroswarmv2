@@ -340,7 +340,7 @@ void SwarmBot::updateOdometery(){
 
 
     linearVelocity = sqrt(pow(velocityX, 2) + pow(velocityY,2)) * direction;
-    angularVelocityOdom = (dPhi/deltaTimeSeconds/360) * toDegrees;
+    angularVelocityOdom = (dPhi/deltaTimeSeconds);
 
     //Theta To Degrees
     thetaRadOdom = angleWrap(thetaRadOdom, true);
